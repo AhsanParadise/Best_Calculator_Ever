@@ -1,0 +1,189 @@
+
+/*=======================================================
+
+                     G o o d L u c k 
+
+=========================================================*/
+
+
+
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    background-color: whitesmoke;
+    margin-top: 100px;
+  
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#323232;
+    animation: drop 5.0s ease; /* Make things beautiful */
+}
+
+.para{
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: peru;
+    animation: drop 4.0s ease; /* Make things beautiful */
+    letter-spacing: 5px;
+}
+
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+     0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#result {
+    height: 120px;
+    margin:4px;
+    border-radius: 5px;
+    background-color: #32323265;
+    color:white;
+}
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: white;
+}
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+
+
+/* I M P O R T A N T */
+
+
+.operator, .number, .empty {
+     width: 50px;
+     height: 50px;
+     margin: 15px;
+     float: left;
+     border-radius: 50%;
+     border-width: 0; 
+     font-weight: bold;
+     font-size: 25px;   
+}
+
+.empty {
+    background-color: #ffffff;
+}
+.number, .operator {
+    cursor: pointer;
+}
+.operator:active, .number:active {
+    font-size: 18px;
+}
+.operator:focus, .number:focus, .empty:focus {
+    outline: 0;
+}
+.number:focus{
+    background-color: wheat;
+}
+
+
+/*===== C O L O R F U L  B U T T O N ====*/
+
+
+button:nth-child(1){
+    font-size: 30px;
+    background-color: rgb(190, 189, 189);
+}
+button:nth-child(2){
+    font-size: 30px;
+    background-color: rgb(190, 189, 189);
+}
+button:nth-child(3){
+    font-size: 30px;
+    background-color: rgb(190, 189, 189);
+}
+button:nth-child(4){
+    font-size: 30px;
+    background-color: #db7ff0;
+}
+button:nth-child(8){
+    font-size: 30px;
+    background-color: #ffd000;
+}
+button:nth-child(12){
+    font-size: 30px;
+    background-color: #eb4848;
+}
+button:nth-child(16){
+    font-size: 30px;
+    background-color: #1c9993;
+}
+button:nth-child(20){
+    font-size: 30px;
+    background-color: #1886b9;
+}
+
+
+footer{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(190, 189, 189);
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* For small Display */
+
+@media only screen and (max-width: 1000px) {
+    
+    body{
+        margin-top: 0;
+    }
+    #calculator {
+        margin-bottom: 50px;
+      
+    }
+    h1 {
+        font-size: 60px;
+    }
+  }
+
+/* Animation */
+
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+
+  /*========T H A N K  Y O U=======*/
